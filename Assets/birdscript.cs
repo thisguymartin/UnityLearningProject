@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,9 +19,11 @@ public class birdscript : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKey(KeyCode.Space))
+         if (Input.GetKey(KeyCode.Space))
         {
+            Debug.Break();
             myRigidBody.velocity = Vector2.up * flapStrength;
+  
 
         }
 
